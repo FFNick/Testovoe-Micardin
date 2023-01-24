@@ -1,0 +1,539 @@
+/* шрифты */
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+:root {
+/* цвета  */
+--header-color: #232E72;
+--blue: #50AAF6;
+--bg-color: #B9DFFF;
+--accent-color: #FF3131;
+
+
+/* шрифты */
+--gen-font: 'Futura PT', sans-serif;
+
+
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: var(--gen-font);
+	letter-spacing: -0.05em;
+	box-sizing: border-box;
+	letter-spacing: normal;
+}
+
+.wrapper {
+	min-width: 350px;
+	max-width: 500px;
+	/* overflow-x: hidden; */
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	color: var(--header-color);
+	font-size: 36px;
+	font-weight: 600;
+	padding: 30px;
+	line-height: 30px;
+	text-align: center;
+
+}
+
+h2 {
+	color: var(--header-color);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: normal;
+}
+
+
+h3 {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 500;
+	color: var(--header-color);
+}
+
+p {
+	font-weight: 450;
+	text-align: center;
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 280px;
+}
+
+
+header {
+	background-color: var(--bg-color);
+	min-height: 100vh;
+}
+
+.pictures {
+	position: relative;
+	display: flex;
+	margin: 30px 0;
+	flex-direction: column;
+	align-items: center;
+	min-height: 370px;
+}
+
+.pictures img {
+	position: absolute;
+}
+
+.fruit {
+	left: -10%;
+	width: 270px;
+}
+
+.micardin_pack {
+	right: -5%;
+	height: 350px;
+	top: 9%;
+}
+
+.woman {
+	/* left: 0; */
+	left: 52px;
+	bottom: 0;
+	width: 260px;
+}
+
+.sale-card {
+	width: 284px;
+	height: 450px;
+	background-color: var(--blue);
+	border-radius: 10px;
+	align-self: center;
+	text-align: center;
+	padding: 15px;
+	margin-top: -30px;
+	/* margin: -30px auto; */
+
+	border: 1px dashed white;
+}
+
+.sale-card {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -70px;
+}
+
+.counter {
+	margin: 20px 0;
+}
+
+.timer-separator {
+	color: #be0600 !important;
+	margin-top: -10px !important;
+	padding: 0 2px !important;
+	font-size: 36px !important;
+}
+
+#timer-text-9d511b0f01cf72efb43ea955c633d7ef-hours,
+#timer-text-9d511b0f01cf72efb43ea955c633d7ef-minutes,
+#timer-text-9d511b0f01cf72efb43ea955c633d7ef-secundes {
+	text-transform: uppercase;
+	margin-top: 5px !important;
+	letter-spacing: normal;
+}
+
+.price {
+	width: 100%;
+	height: 90px;
+	display: flex;
+}
+
+.old-prpice,
+.new-price {
+	height: 100%;
+	width: 50%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+.old-prpice {
+	color: var(--header-color);
+	border-right: 1px solid rgb(100%, 100%, 100%, .2);;
+	font-weight: 600;
+	position: relative;
+}
+
+.old-prpice span::before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 1px;
+	top: 61%;
+	position: absolute;
+	border-top: 1px solid var(--header-color);
+}
+
+.new-price {
+	color: var(--accent-color);
+	font-size: 36px;
+	line-height: 35px;
+	font-weight: 600;
+	margin-left: 10px;
+	margin-right: -10px;
+}
+
+.new-price p {
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: 600;
+}
+
+.sale-card form {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+
+input[type="text"],
+input[type="tel"] {
+	height: 34px;
+	border-radius: 17px;
+	padding-left: 20px;
+	border: none;
+	margin-bottom: 15px;
+	box-shadow: 0px 10px 10px -5px rgba(34, 60, 80, 0.5);
+	background-color: #fff;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+	background-color: var(--header-color);
+	color:#fff;
+	border: none;
+	font-weight: 700;
+	line-height: 46px;
+	font-size: 36px;
+	letter-spacing: normal;
+	margin: 10px auto ;
+}
+
+/* блок с шарами */
+
+.second-block {
+	margin-top: 110px;
+	display: flex;
+	flex-direction: column;
+}
+
+.second-block section{
+	/* position: relative; */
+	margin-bottom: 50px;
+}
+
+.second-block p {
+	max-width: -webkit-fit-content;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
+	line-height: 23px;
+	font-size: 18px;
+	font-weight: 450;
+}
+
+.title {
+	position: relative;
+	min-height: 130px;
+}
+
+.title img,
+.title h2 {
+	position: absolute;
+}
+
+.title h2 {
+	top: 40px;
+	left: 57px;
+}
+
+.first-circle {
+	margin-left: 50px;
+}
+
+.second-circle {
+	margin-left: 100px;
+}
+
+.third-circle {
+	margin-left: 50px;
+}
+
+
+/* третий блок  */
+
+.third-block {
+	background-color: var(--bg-color);
+	padding: 20px;
+}
+
+.pacient {
+	display: flex;
+	padding-bottom: 20px;
+	justify-content: center;
+}
+
+.pacient h2 {
+	text-align: left;
+}
+
+.third-block span {
+	color: #ff3131;
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 62px;
+	letter-spacing: normal;
+	text-shadow: 
+	-0   -1px 0   #FFFFFF,
+	 0   -1px 0   #FFFFFF,
+	-0    1px 0   #FFFFFF,
+	 0    1px 0   #FFFFFF,
+	-1px -0   0   #FFFFFF,
+	 1px -0   0   #FFFFFF,
+	-1px  0   0   #FFFFFF,
+	 1px  0   0   #FFFFFF,
+	-1px -1px 0   #FFFFFF,
+	 1px -1px 0   #FFFFFF,
+	-1px  1px 0   #FFFFFF,
+	 1px  1px 0   #FFFFFF,
+	-1px -1px 0   #FFFFFF,
+	 1px -1px 0   #FFFFFF,
+	-1px  1px 0   #FFFFFF,
+	 1px  1px 0   #FFFFFF;
+	 filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.25));
+	 -webkit-filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.25));
+	 -moz-filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.25));
+}
+
+.promo-pictures {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	height: 300px;
+}
+
+.promo-pictures img {
+	position: absolute;
+}
+
+.promo-pictures .micardin_pack {
+	top: 5%;
+	left: 27%;
+	height: 300px;
+}
+
+.fruit-mini {
+	max-width: 95px;
+	transform: rotate(15deg);
+	right: 22%;
+	bottom: -3%;
+}
+
+.nature {
+	text-align: center;
+	padding: 20px;
+
+}
+
+/* блок с составом */
+
+.fourth-block {
+	margin-top: -1px;
+	background-color: var(--bg-color);
+	color:#FFFFFF;
+}
+
+
+.structure-item {
+	align-self:center;
+	max-width: 275px;
+	border-radius: 20px;
+	background: rgb(35,46,114);
+	background: linear-gradient(0deg, rgba(35,46,114,1) 29%, rgba(58,92,253,1) 100%);	
+	margin-top: 200px;
+	padding: 150px 17px 30px;	
+	position: relative;
+	box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.5);
+}
+
+.structure-item img {
+	position: absolute;
+	height: 310px;
+	top: -173px;
+	left: -17px;
+}
+
+.fourth-block h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.fourth-block p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: normal;
+
+}
+
+/* блок как это работает */
+
+.fifth-block {
+	margin-top: -1px;
+	background-color: var(--bg-color);
+}
+
+ul {
+	list-style: none;
+	align-self:center;
+	padding-bottom: 30px;
+}
+
+li {
+	position: relative;
+	padding: 10px 0 10px 35px;
+	color: var(--header-color);
+}
+
+.fifth-block li::before {
+	display: block;
+	content: url(../img/heart.svg);
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 5px;
+	top: 8px;
+}
+
+/* блок с доктором */
+
+.sixth-block {
+	padding: 20px 0;
+}
+ 
+img.doctor {
+	height: 218px;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	
+}
+
+.sixth-block h3 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px 0;
+	font-weight: 600;
+}
+
+.sixth-block p {
+	color: var(--header-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+}
+
+/* блок с отзывами */
+
+.seventh-block {
+	background-color: var(--bg-color);
+	padding: 20px 0px;
+	
+}
+
+.slider {
+	width: 330px;
+	margin: 0 auto;
+	height: 600px;
+}
+
+.slider--item {
+	background-color: #fff;
+	border-radius: 10px;	
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px;
+	height: 580px;
+	margin-bottom: 20px;
+	box-shadow: 0px 10px 10px 0px rgba(34, 60, 80, 0.5);
+}
+.slider--item-head {
+	display: flex;
+}
+
+.visitor-name {
+	padding-left: 25px;
+}
+
+.visitor-name h3 {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.slider p {
+	padding: 15px 15px;
+	color: var(--header-color);
+	font-weight: 400;
+	font-style: 18px;
+	line-height: 23px;
+}
+
+.slick-dots li button { 
+	border: 2px solid #000;
+	border-radius: 50%;
+	transition: all 0.3s;
+	height: 18px;
+	width: 18px;
+	top: 50%;
+	left: 50%;
+	margin: 4px 0 0 4px;
+}
+
+.slick-dots li {
+	margin: 0 15px;
+}
+
+.slick-dots li button::before { 
+	width: 16px;
+	height: 16px;
+	content: '';
+	opacity: 1;
+	background-color: #fff;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+	transition: all 0.3s;
+}
+
+.slick-dots li.slick-active button::before,
+.slick-dots li button:hover:before { 
+	background-color: #ff3131;
+	opacity: 1;
+}
