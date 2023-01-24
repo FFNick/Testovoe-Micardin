@@ -66,7 +66,7 @@ p {
 	font-size: 18px;
 	line-height: 18px;
 	margin: 0 auto;
-	max-width: 280px;
+	/* max-width: 280px; */
 }
 
 
@@ -89,12 +89,12 @@ header {
 }
 
 .fruit {
-	left: -10%;
+	left: 10%;
 	width: 270px;
 }
 
 .micardin_pack {
-	right: -5%;
+	right: -1%;
 	height: 350px;
 	top: 9%;
 }
@@ -107,8 +107,8 @@ header {
 }
 
 .sale-card {
-	width: 284px;
-	height: 450px;
+	width: 293px;
+	height: 410px;
 	background-color: var(--blue);
 	border-radius: 10px;
 	align-self: center;
@@ -116,14 +116,10 @@ header {
 	padding: 15px;
 	margin-top: -30px;
 	/* margin: -30px auto; */
-
-	border: 1px dashed white;
-}
-
-.sale-card {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: -70px;
+	border: 1px dashed white;
 }
 
 .counter {
@@ -184,13 +180,13 @@ header {
 	font-size: 36px;
 	line-height: 35px;
 	font-weight: 600;
-	margin-left: 10px;
-	margin-right: -10px;
+	margin-left: 7px;
+	margin-right: -7px;
 }
 
 .new-price p {
 	font-size: 24px;
-	line-height: 35px;
+	line-height: 24px;
 	font-weight: 600;
 }
 
@@ -365,14 +361,21 @@ input[type="submit"] {
 	color:#FFFFFF;
 }
 
+.slider1 {
+	/* height: 630px; */
+	width: 330px;
+	margin: 0 auto;
+
+}
 
 .structure-item {
 	align-self:center;
-	max-width: 275px;
+	/* max-width: 275px; */
 	border-radius: 20px;
 	background: rgb(35,46,114);
 	background: linear-gradient(0deg, rgba(35,46,114,1) 29%, rgba(58,92,253,1) 100%);	
-	margin-top: 200px;
+	margin: 200px 30px 15px;
+	/* margin-top: 200px; */
 	padding: 150px 17px 30px;	
 	position: relative;
 	box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.5);
@@ -382,7 +385,7 @@ input[type="submit"] {
 	position: absolute;
 	height: 310px;
 	top: -173px;
-	left: -17px;
+	left: -19px;
 }
 
 .fourth-block h3 {
@@ -536,4 +539,212 @@ img.doctor {
 .slick-dots li button:hover:before { 
 	background-color: #ff3131;
 	opacity: 1;
+}
+
+.course {
+	padding: 30px 0;
+}
+
+.course p {
+	color: var(--header-color);
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 450;
+	padding: 10px 0;
+}
+
+.seventh-block .promo-pictures {
+	margin-bottom: -40px;
+}
+
+/* восьмой блок (с описанием профилактики) */
+
+.eighth-block {
+	background: rgb(185,223,255);
+	background: linear-gradient(0deg, rgba(185,223,255,1) 0%, rgba(255,255,255,1) 100%);
+	padding: 30px;
+}
+
+.promo p {
+	padding-bottom: 20px;
+	color: var(--header-color);
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.promo p span {
+	color: var(--accent-color);
+}
+
+.ninth-block {
+	background-color: rgba(185,223,255,1);
+}
+
+
+.ninth-block .pictures {
+	margin-top: -30px;
+} 
+
+.ninth-block .sale-card {
+	margin-bottom: 30px;
+}
+
+
+
+/* !!!!!!!!!!!!!!!АДАПТИВ !!!!!!!!!!!!!!! */
+
+@media (max-width: 510px ) {
+
+	.wrapper {
+		max-width: 400px;
+		/* overflow-y: hidden; */
+		margin: 0 auto;
+		/* padding-left: 20px;
+		padding-right: 20px; */
+	}
+ 
+	p {
+		max-width: 280px;
+	}
+	
+	.pictures {
+		margin: 20px 0;
+	}
+	
+	.fruit {
+		left: 0%;
+	}
+	
+	.micardin_pack {
+		right: 0%;
+		top: 4%;
+	}
+	
+	.woman {
+		left: 0px;
+		bottom: 10px;
+	}
+	
+	
+	/* блок с шарами */
+	
+	
+	.second-block p {
+		max-width: 360px;
+	}
+		
+	.title h2 {
+		top: 40px;
+		left: 57px;
+	}
+	
+	.first-circle,
+	.third-circle {
+		margin-left: 0px;
+	}
+	
+	.second-circle {
+		margin-left: 50px;
+	}
+	
+	/* третий блок  */
+	
+	.promo-pictures .micardin_pack {
+		top: 4%;
+		left: 20%;
+	}
+	
+	.fruit-mini {
+		right: 15%;
+	}
+	
+	.descrition {
+		padding: 0 10px;
+	}
+
+	
+	/* блок как это работает */
+	
+
+	
+	ul {
+		padding: 0 20px 30px;
+	}
+		
+	.fifth-block h1 {
+		line-height: 35px;
+	}
+	
+	/* блок с доктором */
+	
+	.sixth-block {
+		padding: 20px 0 30px;
+	}
+	 
+	/* блок с отзывами */
+	
+
+	.seventh-block .promo-pictures {
+		margin-bottom: -43px;
+	}
+	
+	/* восьмой блок (с описанием профилактики) */
+	
+	
+	.promo p {
+		padding: 0 5px 20px;
+	}
+
+}
+
+
+@media (max-width: 380px ) {
+
+	.wrapper {
+		max-width: 375px;
+		min-width: 10px;
+	}
+
+	.fruit {
+		left: -9%;
+		width: 290px;
+		top: -5px;
+	}
+	
+	.micardin_pack {
+		top: 9%;
+	}
+	
+	.woman {
+		left: -26px;
+		bottom: 10px;
+	}
+ 
+	/* блок с шарами */
+		
+	.first-circle,
+	.third-circle {
+		margin-left: 40px;
+	}
+	
+	.second-circle {
+		margin-left: 70px;
+	}
+	
+	/* третий блок  */
+	
+	.promo-pictures .micardin_pack {
+		top: 4%;
+		left: 14%;
+	}
+	
+	.fruit-mini {
+		right: 10%;
+	}
+	
+	.promo-pictures .micardin_pack {
+		left: 19%;
+	}
+
 }
